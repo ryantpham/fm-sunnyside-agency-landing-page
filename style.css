@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo {
+    font-family: 'Fraunces', sans-serif; /* Use the Fraunces font */
+    font-weight: 900; /* Bold */
+    font-size: 36px; /* Adjust the font size */
+    color: hsl(51, 100%, 49%); /* Yellow color */
+    letter-spacing: 2px; /* Adjust letter spacing */
+    text-transform: uppercase; /* Convert text to uppercase */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add a slight text shadow */
+} 
+
+.hero{
+    height: 60vh;
+    background-image: url(images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 10%;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* Adjust padding as needed */
+   
+}
+
+.nav ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    list-style:none;
+}
+
+.nav li {
+    font-family: 'Fraunces', serif;
+    color: hsl(0, 0%, 100%);
+    font-weight: 900;
+    font-size: 18px; /* Based on your style guide */
+}
+
+.heroTitle {
+    font-family: 'Fraunces', serif; /* Use the Fraunces font family */
+    font-weight: 900; /* The weight is set to 900 for maximum boldness */
+    color: hsl(0, 0%, 100%); /* Very dark desaturated blue color from the style guide */
+    font-size: 48px; /* This is a suggested size, adjust as needed for your design */
+    line-height: 1.2; /* Adjust line height for better readability */
+    text-transform: uppercase; /* Transform text to uppercase as seen in the design */
+    letter-spacing: 4px; /* Increase letter spacing to match the design */
+    text-align: center; /* Center the text if it matches your layout */
+    margin: 0; /* Remove default margin */
+    padding: 60px ; /* Add some padding at the top and bottom if needed */
+}
+
+.content1{
+    width: 45%;
+    padding: 5rem;
+}
