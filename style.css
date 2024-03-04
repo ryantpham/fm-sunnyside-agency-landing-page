@@ -63,3 +63,40 @@
     width: 45%;
     padding: 5rem;
 }
+
+/* Style for the list items */
+ul li {
+    padding: 10px 20px;
+    position: relative; /* Needed to position the pseudo-element */
+    overflow: hidden; /* Ensures the pseudo-element is clipped to the list item's bounds */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Pseudo-element for the circular background */
+ul li::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2); /* Light background for the circle */
+    border-radius: 50%;
+    transform: scale(0) translate(-50%, -50%);
+    transition: transform 0.3s ease;
+    z-index: 0;
+}
+
+/* Hover effect for the list items */
+ul li:hover::before {
+    transform: scale(1) translate(-50%, -50%);
+}
+
+/* Ensures the text appears above the pseudo-element */
+ul li a {
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    color: hsl(212, 27%, 19%); /* Dark blue color from your style guide */
+    transition: color 0.3s
+}
