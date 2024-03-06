@@ -41,6 +41,7 @@ html, body{
 .hero header nav ul{
     display: flex;
     align-items: center;
+
 }
 
 .hero header nav ul li{
@@ -53,10 +54,19 @@ html, body{
 }
 
 .hero header nav ul li a{
+    display: inline-block;
     text-decoration: none;
     color: hsl(0, 0%, 100%);
     cursor: pointer;
     font-family: 'Barlow', sans-serif;
+    transition: transform 0.3s ease; /* Transition for transform and shadow */
+    transform-origin: bottom; /* Set the origin of transformation */
+}
+.hero header nav ul li a:hover {
+    transform: translateY(-3px) rotateX(15deg); /* Lift the link and tilt it slightly */
+    border-bottom: solid hsl(0, 0%, 100%) 3px;
+    padding-bottom: 5px;
+    border-radius: 1px;
 }
 
 .hero header nav ul li:nth-child(4) a{
@@ -399,6 +409,16 @@ footer .attribution a {
 
 footer .attribution a:hover{
     color: hsl(0, 0%, 100%);
+}
+
+/*Rotation Animation for Social Links*/
+.rotation li a {
+    display: inline-block;
+    transition: transform 0.3s ease; /* Smooth transition for the transform property */
+}
+
+.rotation li a:hover {
+    transform: rotate(360deg); /* Rotate 360 degrees on hover */
 }
 
 /* Responsive design starts here */
